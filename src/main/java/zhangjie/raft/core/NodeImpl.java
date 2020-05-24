@@ -1,11 +1,16 @@
 package zhangjie.raft.core;
 
 import io.netty.util.HashedWheelTimer;
+import zhangjie.raft.core.option.NodeOptions;
 import zhangjie.raft.core.util.NamedThreadFactory;
 import zhangjie.raft.core.util.RepeatedTimer;
+import zhangjie.raft.core.util.Utils;
 
 import java.util.concurrent.ThreadLocalRandom;
 import java.util.concurrent.TimeUnit;
+import java.util.concurrent.locks.Lock;
+import java.util.concurrent.locks.ReadWriteLock;
+import java.util.concurrent.locks.ReentrantReadWriteLock;
 
 /**
  * @Author zhangjie
@@ -14,6 +19,14 @@ import java.util.concurrent.TimeUnit;
 public class NodeImpl implements Node{
     /** Timers */
     private RepeatedTimer electionTimer;
+
+    private final ReadWriteLock readWriteLock = new ReentrantReadWriteLock();
+    protected final Lock writeLock = this.readWriteLock.writeLock();
+    protected final Lock readLock = this.readWriteLock.readLock();
+    private volatile State state;
+    private volatile long lastLeaderTimestamp;
+    private NodeOptions options;
+
 
     @Override
     public boolean init(Object opts) {
@@ -25,7 +38,7 @@ public class NodeImpl implements Node{
 
             @Override
             protected void onTrigger() {
-                handleVoteTimeout();
+                handleElectionTimeout();
             }
 
             @Override
@@ -43,9 +56,38 @@ public class NodeImpl implements Node{
     }
 
     /**
-     * 处理预选举和选举事件
+     * 1. 只有Follower节点才能进行选举
+     * 2. 离上次选举时间超过超时时间，才开始选举
+     * 3. 判断是否发起选举（第一个版本不考虑）
+     *   3.1 通过比较节点的优先级和目标优先级是否允许发起选举
+     *   3.2 如果直到下次选举超时都没有选举下一位leader，将以指数方式衰减其本地目标优先级
+     * 4. 预投票
      */
-    private void handleVoteTimeout() {
+    private void handleElectionTimeout()  {
+        boolean doUnlock = true;
+        this.writeLock.lock();
+        try{
+            if(this.state != State.STATE_FOLLOWER){
+                return;
+            }
+            if(isCurrentLeaderValid()){
+                return;
+            }
+            doUnlock = false;
+            preVote();
+        }finally {
+            if(doUnlock){
+                this.writeLock.unlock();
+            }
+        }
+    }
 
+    //在写锁内执行
+    private void preVote() {
+
+    }
+
+    private boolean isCurrentLeaderValid() {
+        return Utils.monotonicMs() - this.lastLeaderTimestamp < this.options.getElectionTimeoutMs();
     }
 }
