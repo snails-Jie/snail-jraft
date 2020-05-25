@@ -57,7 +57,7 @@ public class NodeImpl implements Node{
 
     /**
      * 1. 只有Follower节点才能进行选举
-     * 2. 离上次选举时间超过超时时间，才开始选举
+     * 2. 离上次leader响应时间超过超时时间，才开始选举
      * 3. 判断是否发起选举（第一个版本不考虑）
      *   3.1 通过比较节点的优先级和目标优先级是否允许发起选举
      *   3.2 如果直到下次选举超时都没有选举下一位leader，将以指数方式衰减其本地目标优先级
@@ -82,7 +82,13 @@ public class NodeImpl implements Node{
         }
     }
 
-    //在写锁内执行
+    /**
+     * 在写锁内执行
+     * 1. 正在安装快照时不能发起预投票
+     * 2. 当前节点必须包含在集群列表中
+     * 3. 获取最新的LogId
+     * 4. 防止currTerm出现ABA问题
+     */
     private void preVote() {
 
     }
