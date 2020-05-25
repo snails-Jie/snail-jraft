@@ -12,6 +12,8 @@ import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReadWriteLock;
 import java.util.concurrent.locks.ReentrantReadWriteLock;
 
+import static zhangjie.raft.core.util.RepeatedTimer.LOG;
+
 /**
  * @Author zhangjie
  * @Date 2020/5/24 18:46
@@ -26,6 +28,8 @@ public class NodeImpl implements Node{
     private volatile State state;
     private volatile long lastLeaderTimestamp;
     private NodeOptions options;
+
+    private long currentTerm;
 
 
     @Override
@@ -87,9 +91,33 @@ public class NodeImpl implements Node{
      * 1. 正在安装快照时不能发起预投票
      * 2. 当前节点必须包含在集群列表中
      * 3. 获取最新的LogId
+     *   ---> 得到LastLogIndex 和 LastLogTerm（判断依据）
      * 4. 防止currTerm出现ABA问题
+     * 5. 初始化投票箱
+     *      --> 投票
+     *         --> 达到阈值成为候选者
+     * 6. 发起预投票请求
      */
     private void preVote() {
+        long oldTerm;
+        try{
+            oldTerm = this.currentTerm;
+        }finally {
+            this.writeLock.unlock();
+        }
+
+        boolean doUnlock = true;
+        this.writeLock.lock();
+        try{
+            if(oldTerm != this.currentTerm){
+                return;
+            }
+
+        }finally {
+            if(doUnlock){
+                this.writeLock.unlock();
+            }
+        }
 
     }
 
