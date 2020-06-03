@@ -13,7 +13,6 @@ import java.util.stream.StreamSupport;
 public class SPITest {
     @Test
     public void serializerTest() {
-        ClassLoader classLoader =  ClassLoader.getSystemClassLoader();
         ServiceLoader<ObjectSerializer> serializers = ServiceLoader.load(ObjectSerializer.class);
         final Optional<ObjectSerializer> serializer = StreamSupport.stream(serializers.spliterator(), false)
                 .findFirst();
