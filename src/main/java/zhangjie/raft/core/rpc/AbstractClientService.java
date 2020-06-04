@@ -2,7 +2,7 @@ package zhangjie.raft.core.rpc;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import zhangjie.raft.core.option.RpcOptions;
+import zhangjie.raft.core.rpc.option.RpcOptions;
 import zhangjie.raft.core.util.Endpoint;
 
 import java.util.concurrent.ThreadPoolExecutor;
@@ -16,7 +16,7 @@ public abstract class AbstractClientService implements ClientService {
 
     protected volatile RpcClient  rpcClient;
     protected ThreadPoolExecutor rpcExecutor;
-    protected RpcOptions          rpcOptions;
+    protected RpcOptions rpcOptions;
 
     /**
      * 初始化属性rpcClient、rpcExecutor、rpcOptions

@@ -18,7 +18,7 @@ package zhangjie.raft.core.rpc;
 
 import com.google.protobuf.Message;
 import zhangjie.raft.core.Lifecycle;
-import zhangjie.raft.core.option.RpcOptions;
+import zhangjie.raft.core.rpc.option.RpcOptions;
 import zhangjie.raft.core.util.Endpoint;
 
 import java.util.concurrent.Future;

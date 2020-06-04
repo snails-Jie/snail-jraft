@@ -20,7 +20,7 @@ package zhangjie.raft.core.rpc;
 import zhangjie.raft.core.Lifecycle;
 import zhangjie.raft.core.ReplicatorGroup;
 import zhangjie.raft.core.error.RemotingException;
-import zhangjie.raft.core.option.RpcOptions;
+import zhangjie.raft.core.rpc.option.RpcOptions;
 import zhangjie.raft.core.util.Endpoint;
 
 /**

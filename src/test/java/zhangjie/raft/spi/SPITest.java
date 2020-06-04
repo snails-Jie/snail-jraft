@@ -11,6 +11,10 @@ import java.util.stream.StreamSupport;
  * @date 2020/6/2 18:41
  */
 public class SPITest {
+
+    /*
+     * 注意建文件时，应该是META-INF/services和META-INF.services的区别（编辑器上显示一样）
+     */
     @Test
     public void serializerTest() {
         ServiceLoader<ObjectSerializer> serializers = ServiceLoader.load(ObjectSerializer.class);
