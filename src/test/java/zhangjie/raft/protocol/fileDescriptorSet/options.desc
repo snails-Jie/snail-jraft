@@ -1,0 +1,6 @@
+
+í
+options.proto google/protobuf/descriptor.proto"
+	MyMessage:šHello world!:D
+my_file_option.google.protobuf.FileOptionsÐ† (	RmyFileOption:>
+	my_option.google.protobuf.MessageOptionsƒ² (	RmyOptionB‚µHello File world!

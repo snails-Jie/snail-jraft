@@ -7702,7 +7702,7 @@
 													"font": "Arial;13;0",
 													"left": 162,
 													"top": 122,
-													"width": 117.04443359375,
+													"width": 127.70849609375,
 													"height": 13,
 													"text": "ProtobufMsgFactory",
 													"wordWrap": true
@@ -7711,7 +7711,7 @@
 											"font": "Arial;13;0",
 											"left": 152,
 											"top": 112,
-											"width": 137.04443359375,
+											"width": 147.70849609375,
 											"height": 33,
 											"nameLabel": {
 												"$ref": "AAAAAAFygY0fiZpiYpU="
@@ -7772,7 +7772,7 @@
 													},
 													"visible": false,
 													"font": "Arial;13;0",
-													"left": 332,
+													"left": 337,
 													"top": 107,
 													"height": 13,
 													"alpha": 1.5707963267948966,
@@ -7791,7 +7791,7 @@
 												"$ref": "AAAAAAFygY0fiZphG/s="
 											},
 											"lineStyle": 2,
-											"points": "288:128;376:128",
+											"points": "299:128;376:128",
 											"nameLabel": {
 												"$ref": "AAAAAAFygY10QZp2kSw="
 											}
@@ -8855,6 +8855,1086 @@
 						"$ref": "AAAAAAFyaurwBcXXmSM="
 					},
 					"name": "Process2"
+				},
+				{
+					"_type": "FCFlowchartDiagram",
+					"_id": "AAAAAAFyk1l/wUZ7NnU=",
+					"_parent": {
+						"$ref": "AAAAAAFyaurwBcXXmSM="
+					},
+					"name": "序列化",
+					"ownedViews": [
+						{
+							"_type": "FCProcessView",
+							"_id": "AAAAAAFyk1vdB0aB8tw=",
+							"_parent": {
+								"$ref": "AAAAAAFyk1l/wUZ7NnU="
+							},
+							"model": {
+								"$ref": "AAAAAAFyk1vdB0Z/CIs="
+							},
+							"subViews": [
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAFyk1vdCEaCSh0=",
+									"_parent": {
+										"$ref": "AAAAAAFyk1vdB0aB8tw="
+									},
+									"font": "Arial;13;0",
+									"left": 194,
+									"top": 154,
+									"width": 65,
+									"height": 13,
+									"text": "序列化对象",
+									"wordWrap": true
+								}
+							],
+							"font": "Arial;13;0",
+							"left": 184,
+							"top": 144,
+							"width": 85,
+							"height": 33,
+							"nameLabel": {
+								"$ref": "AAAAAAFyk1vdCEaCSh0="
+							}
+						},
+						{
+							"_type": "FCProcessView",
+							"_id": "AAAAAAFyk1x9RUaLF28=",
+							"_parent": {
+								"$ref": "AAAAAAFyk1l/wUZ7NnU="
+							},
+							"model": {
+								"$ref": "AAAAAAFyk1x9RUaJJfs="
+							},
+							"subViews": [
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAFyk1x9RUaMWnk=",
+									"_parent": {
+										"$ref": "AAAAAAFyk1x9RUaLF28="
+									},
+									"font": "Arial;13;0",
+									"left": 482,
+									"top": 154,
+									"width": 54.18994140625,
+									"height": 13,
+									"text": "文件",
+									"wordWrap": true
+								}
+							],
+							"font": "Arial;13;0",
+							"left": 472,
+							"top": 144,
+							"width": 74.18994140625,
+							"height": 33,
+							"nameLabel": {
+								"$ref": "AAAAAAFyk1x9RUaMWnk="
+							}
+						},
+						{
+							"_type": "FCFlowView",
+							"_id": "AAAAAAFyk1yix0aW8Vo=",
+							"_parent": {
+								"$ref": "AAAAAAFyk1l/wUZ7NnU="
+							},
+							"model": {
+								"$ref": "AAAAAAFyk1yix0aUmXo="
+							},
+							"subViews": [
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAFyk1yiyEaXUXA=",
+									"_parent": {
+										"$ref": "AAAAAAFyk1yix0aW8Vo="
+									},
+									"model": {
+										"$ref": "AAAAAAFyk1yix0aUmXo="
+									},
+									"font": "Arial;13;0",
+									"left": 357,
+									"top": 131,
+									"width": 26,
+									"height": 13,
+									"alpha": 1.5707963267948966,
+									"distance": 15,
+									"hostEdge": {
+										"$ref": "AAAAAAFyk1yix0aW8Vo="
+									},
+									"edgePosition": 1,
+									"text": "写入"
+								}
+							],
+							"font": "Arial;13;0",
+							"head": {
+								"$ref": "AAAAAAFyk1x9RUaLF28="
+							},
+							"tail": {
+								"$ref": "AAAAAAFyk1vdB0aB8tw="
+							},
+							"lineStyle": 2,
+							"points": "268:152;472:152",
+							"nameLabel": {
+								"$ref": "AAAAAAFyk1yiyEaXUXA="
+							}
+						},
+						{
+							"_type": "FCFlowView",
+							"_id": "AAAAAAFyk10m+0awM5g=",
+							"_parent": {
+								"$ref": "AAAAAAFyk1l/wUZ7NnU="
+							},
+							"model": {
+								"$ref": "AAAAAAFyk10m+kauyUc="
+							},
+							"subViews": [
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAFyk10m+0axFII=",
+									"_parent": {
+										"$ref": "AAAAAAFyk10m+0awM5g="
+									},
+									"model": {
+										"$ref": "AAAAAAFyk10m+kauyUc="
+									},
+									"font": "Arial;13;0",
+									"left": 356,
+									"top": 177,
+									"width": 26,
+									"height": 13,
+									"alpha": 1.5707963267948966,
+									"distance": 15,
+									"hostEdge": {
+										"$ref": "AAAAAAFyk10m+0awM5g="
+									},
+									"edgePosition": 1,
+									"text": "读取"
+								}
+							],
+							"font": "Arial;13;0",
+							"head": {
+								"$ref": "AAAAAAFyk1vdB0aB8tw="
+							},
+							"tail": {
+								"$ref": "AAAAAAFyk1x9RUaLF28="
+							},
+							"lineStyle": 2,
+							"points": "472:168;268:168",
+							"nameLabel": {
+								"$ref": "AAAAAAFyk10m+0axFII="
+							}
+						},
+						{
+							"_type": "FCProcessView",
+							"_id": "AAAAAAFyk19u7Ua7hi4=",
+							"_parent": {
+								"$ref": "AAAAAAFyk1l/wUZ7NnU="
+							},
+							"model": {
+								"$ref": "AAAAAAFyk19u7Ea5sg8="
+							},
+							"subViews": [
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAFyk19u7Ua8NJ4=",
+									"_parent": {
+										"$ref": "AAAAAAFyk19u7Ua7hi4="
+									},
+									"font": "Arial;13;0",
+									"left": 186,
+									"top": 282,
+									"width": 118.498046875,
+									"height": 13,
+									"text": "ObjectOutputStream",
+									"wordWrap": true
+								}
+							],
+							"font": "Arial;13;0",
+							"left": 176,
+							"top": 272,
+							"width": 138.498046875,
+							"height": 33,
+							"nameLabel": {
+								"$ref": "AAAAAAFyk19u7Ua8NJ4="
+							}
+						},
+						{
+							"_type": "FCProcessView",
+							"_id": "AAAAAAFyk1+4JEbGkVo=",
+							"_parent": {
+								"$ref": "AAAAAAFyk1l/wUZ7NnU="
+							},
+							"model": {
+								"$ref": "AAAAAAFyk1+4JEbEwmQ="
+							},
+							"subViews": [
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAFyk1+4JEbHSAk=",
+									"_parent": {
+										"$ref": "AAAAAAFyk1+4JEbGkVo="
+									},
+									"font": "Arial;13;0",
+									"left": 194,
+									"top": 378,
+									"width": 108.38623046875,
+									"height": 13,
+									"text": "ObjectInputStream",
+									"wordWrap": true
+								}
+							],
+							"font": "Arial;13;0",
+							"left": 184,
+							"top": 368,
+							"width": 128.38623046875,
+							"height": 33,
+							"nameLabel": {
+								"$ref": "AAAAAAFyk1+4JEbHSAk="
+							}
+						},
+						{
+							"_type": "FCProcessView",
+							"_id": "AAAAAAFyk2B63kbWOuA=",
+							"_parent": {
+								"$ref": "AAAAAAFyk1l/wUZ7NnU="
+							},
+							"model": {
+								"$ref": "AAAAAAFyk2B63kbUW4U="
+							},
+							"subViews": [
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAFyk2B63kbX9nI=",
+									"_parent": {
+										"$ref": "AAAAAAFyk2B63kbWOuA="
+									},
+									"font": "Arial;13;0",
+									"left": 434,
+									"top": 282,
+									"width": 181,
+									"height": 13,
+									"text": "void writeObject(Object x)",
+									"wordWrap": true
+								}
+							],
+							"font": "Arial;13;0",
+							"left": 424,
+							"top": 272,
+							"width": 201,
+							"height": 41,
+							"nameLabel": {
+								"$ref": "AAAAAAFyk2B63kbX9nI="
+							}
+						},
+						{
+							"_type": "FCFlowView",
+							"_id": "AAAAAAFyk2CPBEbe4Tk=",
+							"_parent": {
+								"$ref": "AAAAAAFyk1l/wUZ7NnU="
+							},
+							"model": {
+								"$ref": "AAAAAAFyk2CPBEbc77Q="
+							},
+							"subViews": [
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAFyk2CPBUbf84c=",
+									"_parent": {
+										"$ref": "AAAAAAFyk2CPBEbe4Tk="
+									},
+									"model": {
+										"$ref": "AAAAAAFyk2CPBEbc77Q="
+									},
+									"font": "Arial;13;0",
+									"left": 342,
+									"top": 267,
+									"width": 52,
+									"height": 13,
+									"alpha": 1.5707963267948966,
+									"distance": 15,
+									"hostEdge": {
+										"$ref": "AAAAAAFyk2CPBEbe4Tk="
+									},
+									"edgePosition": 1,
+									"text": "写入方法"
+								}
+							],
+							"font": "Arial;13;0",
+							"head": {
+								"$ref": "AAAAAAFyk2B63kbWOuA="
+							},
+							"tail": {
+								"$ref": "AAAAAAFyk19u7Ua7hi4="
+							},
+							"lineStyle": 2,
+							"points": "313:288;424:288",
+							"nameLabel": {
+								"$ref": "AAAAAAFyk2CPBUbf84c="
+							}
+						},
+						{
+							"_type": "FCProcessView",
+							"_id": "AAAAAAFyk2DajEbr+1I=",
+							"_parent": {
+								"$ref": "AAAAAAFyk1l/wUZ7NnU="
+							},
+							"model": {
+								"$ref": "AAAAAAFyk2DajEbp25Q="
+							},
+							"subViews": [
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAFyk2DajEbss0U=",
+									"_parent": {
+										"$ref": "AAAAAAFyk2DajEbr+1I="
+									},
+									"font": "Arial;13;0",
+									"left": 442,
+									"top": 378,
+									"width": 125,
+									"height": 13,
+									"text": "Object readObject()",
+									"wordWrap": true
+								}
+							],
+							"font": "Arial;13;0",
+							"left": 432,
+							"top": 368,
+							"width": 145,
+							"height": 33,
+							"nameLabel": {
+								"$ref": "AAAAAAFyk2DajEbss0U="
+							}
+						},
+						{
+							"_type": "FCFlowView",
+							"_id": "AAAAAAFyk2EOZEb2Ot8=",
+							"_parent": {
+								"$ref": "AAAAAAFyk1l/wUZ7NnU="
+							},
+							"model": {
+								"$ref": "AAAAAAFyk2EOY0b0rFA="
+							},
+							"subViews": [
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAFyk2EOZEb3V9k=",
+									"_parent": {
+										"$ref": "AAAAAAFyk2EOZEb2Ot8="
+									},
+									"model": {
+										"$ref": "AAAAAAFyk2EOY0b0rFA="
+									},
+									"font": "Arial;13;0",
+									"left": 345,
+									"top": 363,
+									"width": 52,
+									"height": 13,
+									"alpha": 1.5707963267948966,
+									"distance": 15,
+									"hostEdge": {
+										"$ref": "AAAAAAFyk2EOZEb2Ot8="
+									},
+									"edgePosition": 1,
+									"text": "读取方法"
+								}
+							],
+							"font": "Arial;13;0",
+							"head": {
+								"$ref": "AAAAAAFyk2DajEbr+1I="
+							},
+							"tail": {
+								"$ref": "AAAAAAFyk1+4JEbGkVo="
+							},
+							"lineStyle": 2,
+							"points": "311:384;432:384",
+							"nameLabel": {
+								"$ref": "AAAAAAFyk2EOZEb3V9k="
+							}
+						},
+						{
+							"_type": "FCProcessView",
+							"_id": "AAAAAAFylEFo+EdIqoE=",
+							"_parent": {
+								"$ref": "AAAAAAFyk1l/wUZ7NnU="
+							},
+							"model": {
+								"$ref": "AAAAAAFylEFo90dG+pE="
+							},
+							"subViews": [
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAFylEFo+EdJ83M=",
+									"_parent": {
+										"$ref": "AAAAAAFylEFo+EdIqoE="
+									},
+									"font": "Arial;13;0",
+									"left": 114,
+									"top": 730,
+									"width": 141,
+									"height": 13,
+									"text": "DescriptorProtos",
+									"wordWrap": true
+								}
+							],
+							"font": "Arial;13;0",
+							"left": 104,
+							"top": 720,
+							"width": 161,
+							"height": 33,
+							"nameLabel": {
+								"$ref": "AAAAAAFylEFo+EdJ83M="
+							}
+						},
+						{
+							"_type": "FCProcessView",
+							"_id": "AAAAAAFylEOHD0dhz0c=",
+							"_parent": {
+								"$ref": "AAAAAAFyk1l/wUZ7NnU="
+							},
+							"model": {
+								"$ref": "AAAAAAFylEOHD0dfmqg="
+							},
+							"subViews": [
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAFylEOHD0di+vk=",
+									"_parent": {
+										"$ref": "AAAAAAFylEOHD0dhz0c="
+									},
+									"font": "Arial;13;0",
+									"left": 362,
+									"top": 730,
+									"width": 54.18994140625,
+									"height": 13,
+									"text": "静态类",
+									"wordWrap": true
+								}
+							],
+							"font": "Arial;13;0",
+							"left": 352,
+							"top": 720,
+							"width": 74.18994140625,
+							"height": 33,
+							"nameLabel": {
+								"$ref": "AAAAAAFylEOHD0di+vk="
+							}
+						},
+						{
+							"_type": "FCFlowView",
+							"_id": "AAAAAAFylEOUHkdqzy4=",
+							"_parent": {
+								"$ref": "AAAAAAFyk1l/wUZ7NnU="
+							},
+							"model": {
+								"$ref": "AAAAAAFylEOUHUdomrQ="
+							},
+							"subViews": [
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAFylEOUHkdrTro=",
+									"_parent": {
+										"$ref": "AAAAAAFylEOUHkdqzy4="
+									},
+									"model": {
+										"$ref": "AAAAAAFylEOUHUdomrQ="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 308,
+									"top": 715,
+									"height": 13,
+									"alpha": 1.5707963267948966,
+									"distance": 15,
+									"hostEdge": {
+										"$ref": "AAAAAAFylEOUHkdqzy4="
+									},
+									"edgePosition": 1
+								}
+							],
+							"font": "Arial;13;0",
+							"head": {
+								"$ref": "AAAAAAFylEOHD0dhz0c="
+							},
+							"tail": {
+								"$ref": "AAAAAAFylEFo+EdIqoE="
+							},
+							"lineStyle": 2,
+							"points": "264:736;352:736",
+							"nameLabel": {
+								"$ref": "AAAAAAFylEOUHkdrTro="
+							}
+						},
+						{
+							"_type": "FCProcessView",
+							"_id": "AAAAAAFylEPMcEd0Ya4=",
+							"_parent": {
+								"$ref": "AAAAAAFyk1l/wUZ7NnU="
+							},
+							"model": {
+								"$ref": "AAAAAAFylEPMcEdymMI="
+							},
+							"subViews": [
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAFylEPMcEd1qus=",
+									"_parent": {
+										"$ref": "AAAAAAFylEPMcEd0Ya4="
+									},
+									"font": "Arial;13;0",
+									"left": 506,
+									"top": 634,
+									"width": 99.6962890625,
+									"height": 13,
+									"text": "FileDescriptorSet",
+									"wordWrap": true
+								}
+							],
+							"font": "Arial;13;0",
+							"left": 496,
+							"top": 624,
+							"width": 119.6962890625,
+							"height": 33,
+							"nameLabel": {
+								"$ref": "AAAAAAFylEPMcEd1qus="
+							}
+						},
+						{
+							"_type": "FCFlowView",
+							"_id": "AAAAAAFylEPm5kd94iA=",
+							"_parent": {
+								"$ref": "AAAAAAFyk1l/wUZ7NnU="
+							},
+							"model": {
+								"$ref": "AAAAAAFylEPm5kd72OI="
+							},
+							"subViews": [
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAFylEPm5kd+vaw=",
+									"_parent": {
+										"$ref": "AAAAAAFylEPm5kd94iA="
+									},
+									"model": {
+										"$ref": "AAAAAAFylEPm5kd72OI="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 392,
+									"top": 619,
+									"height": 13,
+									"alpha": 1.5707963267948966,
+									"distance": 15,
+									"hostEdge": {
+										"$ref": "AAAAAAFylEPm5kd94iA="
+									},
+									"edgePosition": 1
+								}
+							],
+							"font": "Arial;13;0",
+							"head": {
+								"$ref": "AAAAAAFylEPMcEd0Ya4="
+							},
+							"tail": {
+								"$ref": "AAAAAAFylEOHD0dhz0c="
+							},
+							"lineStyle": 2,
+							"points": "392:720;392:640;496:640",
+							"nameLabel": {
+								"$ref": "AAAAAAFylEPm5kd+vaw="
+							}
+						},
+						{
+							"_type": "FCProcessView",
+							"_id": "AAAAAAFylEP/a0eJU2M=",
+							"_parent": {
+								"$ref": "AAAAAAFyk1l/wUZ7NnU="
+							},
+							"model": {
+								"$ref": "AAAAAAFylEP/a0eH3XQ="
+							},
+							"subViews": [
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAFylEP/a0eKDRk=",
+									"_parent": {
+										"$ref": "AAAAAAFylEP/a0eJU2M="
+									},
+									"font": "Arial;13;0",
+									"left": 714,
+									"top": 578,
+									"width": 293,
+									"height": 13,
+									"text": "FileDescriptorSet parseFrom(InputStream input)",
+									"wordWrap": true
+								}
+							],
+							"font": "Arial;13;0",
+							"left": 704,
+							"top": 568,
+							"width": 313,
+							"height": 33,
+							"nameLabel": {
+								"$ref": "AAAAAAFylEP/a0eKDRk="
+							}
+						},
+						{
+							"_type": "FCFlowView",
+							"_id": "AAAAAAFylESr1keYyvQ=",
+							"_parent": {
+								"$ref": "AAAAAAFyk1l/wUZ7NnU="
+							},
+							"model": {
+								"$ref": "AAAAAAFylESr1keWTCk="
+							},
+							"subViews": [
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAFylESr1keZ+bk=",
+									"_parent": {
+										"$ref": "AAAAAAFylESr1keYyvQ="
+									},
+									"model": {
+										"$ref": "AAAAAAFylESr1keWTCk="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 592,
+									"top": 563,
+									"height": 13,
+									"alpha": 1.5707963267948966,
+									"distance": 15,
+									"hostEdge": {
+										"$ref": "AAAAAAFylESr1keYyvQ="
+									},
+									"edgePosition": 1
+								}
+							],
+							"font": "Arial;13;0",
+							"head": {
+								"$ref": "AAAAAAFylEP/a0eJU2M="
+							},
+							"tail": {
+								"$ref": "AAAAAAFylEPMcEd0Ya4="
+							},
+							"lineStyle": 2,
+							"points": "592:624;592:584;704:584",
+							"nameLabel": {
+								"$ref": "AAAAAAFylESr1keZ+bk="
+							}
+						}
+					]
+				},
+				{
+					"_type": "FCProcess",
+					"_id": "AAAAAAFyk1vdB0Z/CIs=",
+					"_parent": {
+						"$ref": "AAAAAAFyaurwBcXXmSM="
+					},
+					"name": "序列化对象",
+					"ownedElements": [
+						{
+							"_type": "FCFlow",
+							"_id": "AAAAAAFyk1yix0aUmXo=",
+							"_parent": {
+								"$ref": "AAAAAAFyk1vdB0Z/CIs="
+							},
+							"name": "写入",
+							"source": {
+								"$ref": "AAAAAAFyk1vdB0Z/CIs="
+							},
+							"target": {
+								"$ref": "AAAAAAFyk1x9RUaJJfs="
+							}
+						}
+					]
+				},
+				{
+					"_type": "FCProcess",
+					"_id": "AAAAAAFyk1x9RUaJJfs=",
+					"_parent": {
+						"$ref": "AAAAAAFyaurwBcXXmSM="
+					},
+					"name": "文件",
+					"ownedElements": [
+						{
+							"_type": "FCFlow",
+							"_id": "AAAAAAFyk10m+kauyUc=",
+							"_parent": {
+								"$ref": "AAAAAAFyk1x9RUaJJfs="
+							},
+							"name": "读取",
+							"source": {
+								"$ref": "AAAAAAFyk1x9RUaJJfs="
+							},
+							"target": {
+								"$ref": "AAAAAAFyk1vdB0Z/CIs="
+							}
+						}
+					]
+				},
+				{
+					"_type": "FCProcess",
+					"_id": "AAAAAAFyk1zGr0afXS0=",
+					"_parent": {
+						"$ref": "AAAAAAFyaurwBcXXmSM="
+					},
+					"name": "对象"
+				},
+				{
+					"_type": "FCProcess",
+					"_id": "AAAAAAFyk19u7Ea5sg8=",
+					"_parent": {
+						"$ref": "AAAAAAFyaurwBcXXmSM="
+					},
+					"name": "ObjectOutputStream",
+					"ownedElements": [
+						{
+							"_type": "FCFlow",
+							"_id": "AAAAAAFyk2CPBEbc77Q=",
+							"_parent": {
+								"$ref": "AAAAAAFyk19u7Ea5sg8="
+							},
+							"name": "写入方法",
+							"source": {
+								"$ref": "AAAAAAFyk19u7Ea5sg8="
+							},
+							"target": {
+								"$ref": "AAAAAAFyk2B63kbUW4U="
+							}
+						}
+					]
+				},
+				{
+					"_type": "FCProcess",
+					"_id": "AAAAAAFyk1+4JEbEwmQ=",
+					"_parent": {
+						"$ref": "AAAAAAFyaurwBcXXmSM="
+					},
+					"name": "ObjectInputStream",
+					"ownedElements": [
+						{
+							"_type": "FCFlow",
+							"_id": "AAAAAAFyk2EOY0b0rFA=",
+							"_parent": {
+								"$ref": "AAAAAAFyk1+4JEbEwmQ="
+							},
+							"name": "读取方法",
+							"source": {
+								"$ref": "AAAAAAFyk1+4JEbEwmQ="
+							},
+							"target": {
+								"$ref": "AAAAAAFyk2DajEbp25Q="
+							}
+						}
+					]
+				},
+				{
+					"_type": "FCProcess",
+					"_id": "AAAAAAFyk2B63kbUW4U=",
+					"_parent": {
+						"$ref": "AAAAAAFyaurwBcXXmSM="
+					},
+					"name": "void writeObject(Object x)"
+				},
+				{
+					"_type": "FCProcess",
+					"_id": "AAAAAAFyk2DajEbp25Q=",
+					"_parent": {
+						"$ref": "AAAAAAFyaurwBcXXmSM="
+					},
+					"name": "Object readObject()"
+				},
+				{
+					"_type": "FCFlowchartDiagram",
+					"_id": "AAAAAAFyk4SrBEcIzDo=",
+					"_parent": {
+						"$ref": "AAAAAAFyaurwBcXXmSM="
+					},
+					"name": "protocll buffers",
+					"ownedViews": [
+						{
+							"_type": "FCProcessView",
+							"_id": "AAAAAAFyk4UK3UcOiHI=",
+							"_parent": {
+								"$ref": "AAAAAAFyk4SrBEcIzDo="
+							},
+							"model": {
+								"$ref": "AAAAAAFyk4UK3UcMvgk="
+							},
+							"subViews": [
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAFyk4UK3UcP1qg=",
+									"_parent": {
+										"$ref": "AAAAAAFyk4UK3UcOiHI="
+									},
+									"font": "Arial;13;0",
+									"left": 154,
+									"top": 154,
+									"width": 59.24267578125,
+									"height": 13,
+									"text": ".proto文件",
+									"wordWrap": true
+								}
+							],
+							"font": "Arial;13;0",
+							"left": 144,
+							"top": 144,
+							"width": 79.24267578125,
+							"height": 33,
+							"nameLabel": {
+								"$ref": "AAAAAAFyk4UK3UcP1qg="
+							}
+						},
+						{
+							"_type": "FCProcessView",
+							"_id": "AAAAAAFyk4VzJEcY/3I=",
+							"_parent": {
+								"$ref": "AAAAAAFyk4SrBEcIzDo="
+							},
+							"model": {
+								"$ref": "AAAAAAFyk4VzJEcWwS8="
+							},
+							"subViews": [
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAFyk4VzJEcZX0A=",
+									"_parent": {
+										"$ref": "AAAAAAFyk4VzJEcY/3I="
+									},
+									"font": "Arial;13;0",
+									"left": 410,
+									"top": 154,
+									"width": 54.18994140625,
+									"height": 13,
+									"text": "类",
+									"wordWrap": true
+								}
+							],
+							"font": "Arial;13;0",
+							"left": 400,
+							"top": 144,
+							"width": 74.18994140625,
+							"height": 33,
+							"nameLabel": {
+								"$ref": "AAAAAAFyk4VzJEcZX0A="
+							}
+						},
+						{
+							"_type": "FCFlowView",
+							"_id": "AAAAAAFyk4WTfEchumU=",
+							"_parent": {
+								"$ref": "AAAAAAFyk4SrBEcIzDo="
+							},
+							"model": {
+								"$ref": "AAAAAAFyk4WTfEcfhKQ="
+							},
+							"subViews": [
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAFyk4WTfUcirbI=",
+									"_parent": {
+										"$ref": "AAAAAAFyk4WTfEchumU="
+									},
+									"model": {
+										"$ref": "AAAAAAFyk4WTfEcfhKQ="
+									},
+									"font": "Arial;13;0",
+									"left": 247,
+									"top": 139,
+									"width": 128.36865234375,
+									"height": 13,
+									"alpha": 1.5707963267948966,
+									"distance": 15,
+									"hostEdge": {
+										"$ref": "AAAAAAFyk4WTfEchumU="
+									},
+									"edgePosition": 1,
+									"text": "protocol buffers编译器"
+								}
+							],
+							"font": "Arial;13;0",
+							"head": {
+								"$ref": "AAAAAAFyk4VzJEcY/3I="
+							},
+							"tail": {
+								"$ref": "AAAAAAFyk4UK3UcOiHI="
+							},
+							"lineStyle": 2,
+							"points": "222:160;400:160",
+							"nameLabel": {
+								"$ref": "AAAAAAFyk4WTfUcirbI="
+							}
+						},
+						{
+							"_type": "UMLNoteView",
+							"_id": "AAAAAAFyk4YRdEcsGnM=",
+							"_parent": {
+								"$ref": "AAAAAAFyk4SrBEcIzDo="
+							},
+							"font": "Arial;13;0",
+							"left": 88,
+							"top": 216,
+							"width": 124,
+							"height": 50,
+							"text": "要存储的数据结构"
+						},
+						{
+							"_type": "UMLNoteLinkView",
+							"_id": "AAAAAAFyk4YRmUcvOTI=",
+							"_parent": {
+								"$ref": "AAAAAAFyk4SrBEcIzDo="
+							},
+							"font": "Arial;13;0",
+							"head": {
+								"$ref": "AAAAAAFyk4YRdEcsGnM="
+							},
+							"tail": {
+								"$ref": "AAAAAAFyk4UK3UcOiHI="
+							},
+							"lineStyle": 1,
+							"points": "176:177;160:215"
+						},
+						{
+							"_type": "UMLNoteView",
+							"_id": "AAAAAAFyk4a780c4GDE=",
+							"_parent": {
+								"$ref": "AAAAAAFyk4SrBEcIzDo="
+							},
+							"font": "Arial;13;0",
+							"left": 336,
+							"top": 216,
+							"width": 321,
+							"height": 83,
+							"text": "1.以有效的二进制格式实现protocol buffer数据的\n  自动编码和解析\n2. protocol buffer格式支持以某种方式扩展格式的思想\n  --> 以使代码仍可以读取以旧格式编码的数据"
+						},
+						{
+							"_type": "UMLNoteLinkView",
+							"_id": "AAAAAAFyk4a8F0c72T8=",
+							"_parent": {
+								"$ref": "AAAAAAFyk4SrBEcIzDo="
+							},
+							"font": "Arial;13;0",
+							"head": {
+								"$ref": "AAAAAAFyk4a780c4GDE="
+							},
+							"tail": {
+								"$ref": "AAAAAAFyk4VzJEcY/3I="
+							},
+							"lineStyle": 1,
+							"points": "447:177;470:215"
+						}
+					]
+				},
+				{
+					"_type": "FCProcess",
+					"_id": "AAAAAAFyk4UK3UcMvgk=",
+					"_parent": {
+						"$ref": "AAAAAAFyaurwBcXXmSM="
+					},
+					"name": ".proto文件",
+					"ownedElements": [
+						{
+							"_type": "FCFlow",
+							"_id": "AAAAAAFyk4WTfEcfhKQ=",
+							"_parent": {
+								"$ref": "AAAAAAFyk4UK3UcMvgk="
+							},
+							"name": "protocol buffers编译器",
+							"source": {
+								"$ref": "AAAAAAFyk4UK3UcMvgk="
+							},
+							"target": {
+								"$ref": "AAAAAAFyk4VzJEcWwS8="
+							}
+						}
+					]
+				},
+				{
+					"_type": "FCProcess",
+					"_id": "AAAAAAFyk4VzJEcWwS8=",
+					"_parent": {
+						"$ref": "AAAAAAFyaurwBcXXmSM="
+					},
+					"name": "类"
+				},
+				{
+					"_type": "FCProcess",
+					"_id": "AAAAAAFylEFo90dG+pE=",
+					"_parent": {
+						"$ref": "AAAAAAFyaurwBcXXmSM="
+					},
+					"name": "DescriptorProtos",
+					"ownedElements": [
+						{
+							"_type": "FCFlow",
+							"_id": "AAAAAAFylEOUHUdomrQ=",
+							"_parent": {
+								"$ref": "AAAAAAFylEFo90dG+pE="
+							},
+							"source": {
+								"$ref": "AAAAAAFylEFo90dG+pE="
+							},
+							"target": {
+								"$ref": "AAAAAAFylEOHD0dfmqg="
+							}
+						}
+					]
+				},
+				{
+					"_type": "FCProcess",
+					"_id": "AAAAAAFylEOHD0dfmqg=",
+					"_parent": {
+						"$ref": "AAAAAAFyaurwBcXXmSM="
+					},
+					"name": "静态类",
+					"ownedElements": [
+						{
+							"_type": "FCFlow",
+							"_id": "AAAAAAFylEPm5kd72OI=",
+							"_parent": {
+								"$ref": "AAAAAAFylEOHD0dfmqg="
+							},
+							"source": {
+								"$ref": "AAAAAAFylEOHD0dfmqg="
+							},
+							"target": {
+								"$ref": "AAAAAAFylEPMcEdymMI="
+							}
+						}
+					]
+				},
+				{
+					"_type": "FCProcess",
+					"_id": "AAAAAAFylEPMcEdymMI=",
+					"_parent": {
+						"$ref": "AAAAAAFyaurwBcXXmSM="
+					},
+					"name": "FileDescriptorSet",
+					"ownedElements": [
+						{
+							"_type": "FCFlow",
+							"_id": "AAAAAAFylESr1keWTCk=",
+							"_parent": {
+								"$ref": "AAAAAAFylEPMcEdymMI="
+							},
+							"source": {
+								"$ref": "AAAAAAFylEPMcEdymMI="
+							},
+							"target": {
+								"$ref": "AAAAAAFylEP/a0eH3XQ="
+							}
+						}
+					]
+				},
+				{
+					"_type": "FCProcess",
+					"_id": "AAAAAAFylEP/a0eH3XQ=",
+					"_parent": {
+						"$ref": "AAAAAAFyaurwBcXXmSM="
+					},
+					"name": "FileDescriptorSet parseFrom(InputStream input)"
 				}
 			]
 		},
