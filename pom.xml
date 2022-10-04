@@ -30,7 +30,7 @@
     <properties>
         <commons.lang.version>2.6</commons.lang.version>
         <netty.common.version>4.1.48.Final</netty.common.version>
-        <protobuf.version>3.12.2</protobuf.version>
+        <protobuf.version>3.16.3</protobuf.version>
         <metrics.version>4.0.2</metrics.version>
         <asm.version>6.0</asm.version>
     </properties>
